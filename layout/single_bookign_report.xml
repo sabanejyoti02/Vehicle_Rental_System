@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardMaxElevation="10dp"
+    android:layout_marginBottom="20dp"
+    app:cardElevation="15dp"
+
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="20dp"
+        android:background="#F4F5F7"
+        android:layout_height="match_parent">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+
+        android:id="@+id/grid1"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"
+
+            android:gravity="center"
+            android:text="Brand Name"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txt_rbname"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+
+            android:text="Brand Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txt_rdate"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+
+            android:gravity="center"
+            android:text="Date"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:id="@+id/grid2"
+        android:layout_below="@+id/grid1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Car Name"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Model"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Vehical NO"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txt_rcarname"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Car Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_rmodel"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Car Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_rvno"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Car Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/grid2"
+            android:id="@+id/grid3"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="From"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="TO"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Total Charges"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_below="@id/grid3"
+            android:id="@+id/grid4"
+
+            >
+
+            <TextView
+                android:id="@+id/txt_rfrom"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:gravity="center"
+                android:text="Brand Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/txt_rto"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:gravity="center"
+                android:text="Brand Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+
+                android:id="@+id/txt_rtotal"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:gravity="center"
+                android:text="Date"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </GridLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
